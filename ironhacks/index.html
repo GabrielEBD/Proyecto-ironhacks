@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NY rent</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="
+    sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" type="text/css" href="style.css" crossorigin="anonymous">
+    <!--
+    <link rel="stylesheet" href="bootstrap.css" crossorigin="anonymous">
+    -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+        
+    </script>
+
+    <!--libreria google maps -->
+    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+
+  </head>
+  <body>
+    <div class="container-fluid" style="background: #00BFFF">
+        <h1 class="h1"> The best choise </h1>
+      
+    </div>
+    <div id="main">
+      <div id="tabla" >
+        <div class="alert alert-secondary" role="alert">
+          <h4 class="alert-heading">Opciones!</h4>
+        </div>
+        <button type="button" id="updateButton" class="btn btn-dark">update</button> 
+        <button type="button" id="pintarCasa"   class="btn btn-dark">casas</button>
+        <button type="button" id="pintarMuseo"  class="btn btn-dark">museos</button>
+        <button type="button" id="pintarGaleria"  class="btn btn-dark">galerias</button>
+        <div class="container-fluid">
+          <table class="table">
+            <thead >
+              <tr>
+                <th scope="col">Direccion casa</th>
+                <th scope="col">Precio estimado</th>
+              </tr>
+            </thead >
+            <tbody id="Tabla">
+            </tbody>
+          </table>
+          <div id="num"></div>
+        </div>
+      </div>
+      <div id="mapa">
+        <div id="googleMapContainer"></div>
+      </div>
+    </div>
+
+    <!-- jquery
+    
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    -->
+    <!-- mio-->
+    <script type="text/javascript" src="index.js"></script>
+    <!-- google-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC60FC360SYTz0445oY4TujQVCkmL8TXqI&callback=onGoogleMapResponse"
+    ></script>
+
+  </body>
+</html>
